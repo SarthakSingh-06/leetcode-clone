@@ -5,5 +5,5 @@ export async function ProtectedComponentProvider(
     { children }: { children: ReactNode }
 ) {
   await auth.protect();
-  return <>{children}</>;
+  return (<>{children}</>);
 }
